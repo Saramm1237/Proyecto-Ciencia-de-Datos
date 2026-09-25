@@ -54,23 +54,18 @@ El conjunto de datos fue obtenido de Kaggle:
 https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting
 
 ### Archivo utilizado
-
-```text
-train.csv
+`train.csv`
 
 ## 🔎 Procesamiento y análisis
-
 El proyecto contempla las siguientes etapas:
 
 ### 1. Comprensión de los datos
-
 - Carga del dataset.
 - Inspección de la estructura.
 - Identificación de tipos de datos.
 - Análisis de las variables.
 
 ### 2. Limpieza y transformación
-
 - Identificación de valores nulos.
 - Detección de registros duplicados.
 - Conversión de tipos de datos.
@@ -78,7 +73,6 @@ El proyecto contempla las siguientes etapas:
 - Preparación de la variable temporal.
 
 ### 3. Análisis exploratorio de datos (EDA)
-
 - Análisis univariado.
 - Análisis bivariado y multivariado.
 - Estadística descriptiva.
@@ -86,7 +80,6 @@ El proyecto contempla las siguientes etapas:
 - Análisis de relaciones entre variables.
 
 ### 4. Análisis temporal
-
 - Organización de los datos por fecha.
 - Análisis de tendencias.
 - Análisis de variabilidad.
@@ -95,14 +88,12 @@ El proyecto contempla las siguientes etapas:
 - Pronóstico de ventas.
 
 ### 5. Visualización
-
 Se utilizan herramientas de visualización para comunicar los principales resultados:
 
 - Seaborn.
 - Plotly.
 
 ### 6. Conclusiones
-
 Los hallazgos y conclusiones se construyen a partir de la evidencia obtenida durante el análisis.
 
 ---
@@ -127,34 +118,36 @@ Los hallazgos y conclusiones se construyen a partir de la evidencia obtenida dur
 
 ### 1. Clonar el repositorio
 
-```bash
-git clone https://github.com/Saramm1237/Proyecto-Ciencia-de-Datos.git
+    git clone https://github.com/Saramm1237/Proyecto-Ciencia-de-Datos.git
 
 ### 2. Entrar al proyecto
 
-```bash
-cd Proyecto-Ciencia-de-Datos
+    cd Proyecto-Ciencia-de-Datos
 
 ### 3. Crear el entorno virtual
 
-```bash
 En Windows:
-python -m venv .venv
 
-###4. Activar el entorno virtual
+    python -m venv .venv
+
+### 4. Activar el entorno virtual
 
 En PowerShell:
-.venv\Scripts\Activate.ps1
+
+    .venv\Scripts\Activate.ps1
 
 ### 5. Instalar las dependencias
-pip install -r requirements.txt
 
-### 7. Ejecutar el notebook
+    pip install -r requirements.txt
+
+### 6. Ejecutar el notebook
 
 Abrir el archivo:
-Proyecto.ipynb
+
+`Proyecto.ipynb`
 
 Ejecutar las celdas en orden desde el inicio hasta el final.
+
 El archivo de datos debe encontrarse en:
 
-data/train.csv
+`data/train.csv`
