@@ -11,7 +11,7 @@ Proyecto final de la Especialización en Ciencia de Datos e Inteligencia Artific
 
 ## Descripción del proyecto
 
-Este proyecto realiza un análisis exploratorio y temporal de datos de ventas de una tienda minorista global.
+Este proyecto realiza un análisis exploratorio y temporal de datos de ventas de una tienda minorista (*Superstore*) en Estados Unidos.
 
 El objetivo es comprender el comportamiento de las ventas, identificar tendencias, patrones temporales y variaciones en la demanda, para finalmente generar un pronóstico de ventas para los próximos 7 días.
 
@@ -43,7 +43,7 @@ Analizar el comportamiento histórico de las ventas y realizar un pronóstico de
 
 ## Conjunto de datos
 
-Para este proyecto se utiliza el **Superstore Sales Dataset**, que contiene información de ventas de una tienda minorista durante aproximadamente cuatro años.
+Para este proyecto se utiliza el **Superstore Sales Dataset**, que contiene 9.800 líneas de pedido (18 variables) de una tienda minorista de Estados Unidos entre enero de 2015 y diciembre de 2018.
 
 ### Fuente
 
@@ -54,7 +54,7 @@ El conjunto de datos fue obtenido de Kaggle:
 https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting
 
 ### Archivo utilizado
-`train.csv`
+`train.csv` (en la carpeta `data/`)
 
 ## 🔎 Procesamiento y análisis
 El proyecto contempla las siguientes etapas:
@@ -90,11 +90,36 @@ El proyecto contempla las siguientes etapas:
 ### 5. Visualización
 Se utilizan herramientas de visualización para comunicar los principales resultados:
 
-- Seaborn.
-- Plotly.
+- Seaborn (visualizaciones estáticas del EDA).
+- Plotly (gráficos interactivos y dashboard con indicadores/KPI).
 
 ### 6. Conclusiones
 Los hallazgos y conclusiones se construyen a partir de la evidencia obtenida durante el análisis.
+
+---
+
+## 📌 Resultados principales
+
+- Ventas totales 2015–2018: ≈ 2,26 millones de USD; crecimiento de +31 % en 2017 y +20 % en 2018.
+- Estacionalidad anual marcada: septiembre, noviembre y diciembre concentran ≈ 43 % de las ventas.
+- Technology es la categoría de mayor valor; West y East concentran ≈ 61 % de las ventas.
+- Pronóstico para el 31-dic-2018 al 6-ene-2019: ≈ 10.900 USD, con un modelo validado en semanas equivalentes de años anteriores.
+
+---
+
+## 📁 Estructura del proyecto
+
+    Proyecto-Ciencia-de-Datos/
+    ├── data/
+    │   └── train.csv              # Datos originales
+    ├── Proyecto.ipynb             # Notebook con el análisis completo
+    ├── README.md
+    └── requirements.txt
+
+Al ejecutar el notebook se generan:
+
+- `data/train_limpio.csv` — versión limpia del dataset.
+- `dashboard_ventas_superstore.html` — dashboard interactivo.
 
 ---
 
@@ -106,6 +131,7 @@ Los hallazgos y conclusiones se construyen a partir de la evidencia obtenida dur
 - Matplotlib
 - Seaborn
 - Plotly
+- Statsmodels
 - Scikit-learn
 - Jupyter Notebook
 - Visual Studio Code
@@ -151,3 +177,7 @@ Ejecutar las celdas en orden desde el inicio hasta el final.
 El archivo de datos debe encontrarse en:
 
 `data/train.csv`
+
+Para verificar la reproducibilidad: *Reiniciar kernel → Ejecutar todo*.
+
+> No se incluye la carpeta `.venv` en la entrega.
